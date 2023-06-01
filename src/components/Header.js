@@ -1,5 +1,5 @@
 import React from "react";
-
+import menuLinksData from "./data/menu_links.json";
 export function Header() {
   return (
     <header id="intro">
