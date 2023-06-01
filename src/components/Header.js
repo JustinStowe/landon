@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header() {
+export function Header() {
   return (
     <header id="intro">
       <article className="fullheight">

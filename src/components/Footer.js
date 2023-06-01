@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer() {
+export function Footer() {
   return (
     <footer className="scene">
       <article className="content">
