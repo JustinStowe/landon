@@ -45,7 +45,7 @@ function HotelInfoDiv() {
           </p>
           <ul>
             {servicesData.map((item) => (
-              <li>{item.text}</li>
+              <li>{item.name}</li>
             ))}
           </ul>
         </section>
@@ -58,7 +58,7 @@ function HotelInfoDiv() {
           </p>
           <ul>
             {amenitiesData.map((item) => (
-              <li>{item.text}</li>
+              <li>{item.name}</li>
             ))}
           </ul>
         </section>
