@@ -1,5 +1,6 @@
 import React from "react";
-import servsAndAmenities from "./data/services.json";
+import servsAndAmenitiesData from "./data/services.json";
+import accessibilityData from "./data/accessibilityData.json";
 function HotelInfoDiv() {
   return (
     <div className="scene" id="hotelinfo">
@@ -43,7 +44,7 @@ function HotelInfoDiv() {
             your stay comfortable, and your experience one-of-a-kind.
           </p>
           <ul>
-            {servsAndAmenities.map((item) => (
+            {servsAndAmenitiesData.map((item) => (
               <li>{item.text}</li>
             ))}
           </ul>
@@ -56,19 +57,9 @@ function HotelInfoDiv() {
             needs:
           </p>
           <ul>
-            <li>Grab bars on tub walls</li>
-            <li>Shower chairs</li>
-            <li>Hand held shower sprayers</li>
-            <li>Higher toilets &amp; toilet modifiers</li>
-            <li>Lower sink faucet handles</li>
-            <li>Wheelchair clearance under sinks &amp; vanity</li>
-            <li>Lower racks in closet</li>
-            <li>TDD machines</li>
-            <li>Telephone light signalers &amp; smoke alarms</li>
-            <li>Telephone amplification handsets</li>
-            <li>Closed captioned television converters</li>
-            <li>Vibrating alarm clocks</li>
-            <li>Telephones with volume control</li>
+            {accessibilityData.map((item) => (
+              <li>{item.text}</li>
+            ))}
           </ul>
         </section>
       </article>
