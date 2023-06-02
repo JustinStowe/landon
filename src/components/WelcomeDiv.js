@@ -1,5 +1,5 @@
 import React from "react";
-import galleryImages from "./data/gallery_links.json";
+import galleryImages from "./data/gallery_images.json";
 function WelcomeDiv() {
   return (
     <div className="scene" id="welcome">

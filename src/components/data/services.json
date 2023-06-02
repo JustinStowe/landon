@@ -1,47 +1,17 @@
 [
-  {
-    "text": "Indoor pool"
-  },
-  {
-    "text": "24-hour fitness center"
-  },
-  {
-    "text": "Massage therapy"
-  },
-  {
-    "text": "Full service spa"
-  },
-  {
-    "text": "In-room jacuzzi tubs"
-  },
-  {
-    "text": "Rooftop café &amp; smoothie bar"
-  },
-  {
-    "text": "Coffee bar &amp; pastry shop"
-  },
-  {
-    "text": "Traditional continental breakfast"
-  },
-  {
-    "text": "24-hour concierge service"
-  },
-  {
-    "text": "Business center"
-  },
-  {
-    "text": "Complimentary wireless service"
-  },
-  {
-    "text": "Laundry &amp; dry cleaning service"
-  },
-  {
-    "text": "Daily paper"
-  },
-  {
-    "text": "Certified &ldquo;green&ldquo; hotel"
-  },
-  {
-    "text": "Pet-friendly rooms &amp; common areas"
-  }
+  { "name": "Indoor pool" },
+  { "name": "24-hour fitness center" },
+  { "name": "Massage therapy" },
+  { "name": "Full service spa" },
+  { "name": "In-room jacuzzi tubs" },
+  { "name": "Rooftop café  &amp; smoothie bar" },
+  { "name": "Coffee bar  &amp; pastry shop" },
+  { "name": "Traditional continental breakfast" },
+  { "name": "24-hour concierge service" },
+  { "name": "Business center" },
+  { "name": "Complimentary wireless service" },
+  { "name": "Laundry &amp; dry cleaning service" },
+  { "name": "Daily paper" },
+  { "name": "Certified \"green\" hotel" },
+  { "name": "Pet-friendly rooms  &amp; common areas" }
 ]

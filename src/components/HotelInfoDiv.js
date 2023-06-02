@@ -1,6 +1,6 @@
 import React from "react";
-import servsAndAmenitiesData from "./data/services.json";
-import accessibilityData from "./data/accessibilityData.json";
+import servicesData from "./data/services.json";
+import amenitiesData from "./data/amenities.json";
 function HotelInfoDiv() {
   return (
     <div className="scene" id="hotelinfo">
@@ -44,7 +44,7 @@ function HotelInfoDiv() {
             your stay comfortable, and your experience one-of-a-kind.
           </p>
           <ul>
-            {servsAndAmenitiesData.map((item) => (
+            {servicesData.map((item) => (
               <li>{item.text}</li>
             ))}
           </ul>
@@ -57,7 +57,7 @@ function HotelInfoDiv() {
             needs:
           </p>
           <ul>
-            {accessibilityData.map((item) => (
+            {amenitiesData.map((item) => (
               <li>{item.text}</li>
             ))}
           </ul>
