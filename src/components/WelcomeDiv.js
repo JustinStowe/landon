@@ -1,31 +1,13 @@
 import React from "react";
-
+import galleryImages from "./data/gallery_links.json";
 function WelcomeDiv() {
   return (
     <div className="scene" id="welcome">
       <article className="content">
         <div className="gallery">
-          <img
-            src="https://landonhotel.com/images/hotel/intro_room.jpg"
-            alt="Intro Gallery Room Sample Pictures"
-          />
-          <img
-            src="https://landonhotel.com/images/hotel/intro_pool.jpg"
-            alt="Intro Gallery Pool Sample Pictures"
-          />
-          <img
-            src="https://landonhotel.com/images/hotel/intro_dining.jpg"
-            alt="Intro Gallery Dining Sample Pictures"
-          />
-          <img
-            src="https://landonhotel.com/images/hotel/intro_attractions.jpg"
-            alt="Intro Gallery Attractions Sample Pictures"
-          />
-          <img
-            className="hidesm"
-            src="https://landonhotel.com/images/hotel/intro_wedding.jpg"
-            alt="Intro Gallery Dining Sample Pictures"
-          />
+          {galleryImages.map((image) => (
+            <img src={image.src} alt={image.alt} />
+          ))}
         </div>
         <h1>Welcome to the Landon&nbsp;Hotel</h1>
         <p>
