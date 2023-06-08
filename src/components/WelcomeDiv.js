@@ -5,8 +5,8 @@ function WelcomeDiv() {
     <div className="scene" id="welcome">
       <article className="content">
         <div className="gallery">
-          {galleryImages.map((image) => (
-            <img src={image.src} alt={image.alt} />
+          {galleryImages.map((image, index) => (
+            <img key={index} src={image.src} alt={image.alt} />
           ))}
         </div>
         <h1>Welcome to the Landon&nbsp;Hotel</h1>
