@@ -1,7 +1,29 @@
-import React from "react";
-import servicesData from "./data/services.json";
-import accessibilitiesData from "./data/accessibilities.json";
+import React, { useState, useEffect } from "react";
+// import servicesData from "./data/services.json";
+// import accessibilitiesData from "./data/accessibilities.json";
 function HotelInfoDiv() {
+  const [accessibilitiesData, setAccessibilitiesData] = useState([]);
+  const [servicesData, setServicesData] = useState([]);
+  const loadAccessibilitiesData = async () => {
+    const response = await fetch(
+      "https://0kbeg1cv46.execute-api.us-east-1.amazonaws.com/Production/accessibilities"
+    );
+    let jsonData = await response.json();
+    setAccessibilitiesData(jsonData);
+  };
+  const loadServicesData = async () => {
+    const response = await fetch(
+      "https://0kbeg1cv46.execute-api.us-east-1.amazonaws.com/Production/services"
+    );
+    let jsonData = await response.json();
+    setServicesData(jsonData);
+  };
+
+  useEffect(() => {
+    loadAccessibilitiesData();
+    loadServicesData();
+  }, []);
+
   return (
     <div className="scene" id="hotelinfo">
       <article className="heading">
@@ -57,8 +79,8 @@ function HotelInfoDiv() {
             needs:
           </p>
           <ul>
-            {accessibilitiesData.map((item) => (
-              <li>{item.name}</li>
+            {accessibilitiesData.map((item, index) => (
+              <li key={index}>{item.name}</li>
             ))}
           </ul>
         </section>
