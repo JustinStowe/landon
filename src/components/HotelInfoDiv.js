@@ -44,8 +44,8 @@ function HotelInfoDiv() {
             your stay comfortable, and your experience one-of-a-kind.
           </p>
           <ul>
-            {servicesData.map((item) => (
-              <li>{item.name}</li>
+            {servicesData.map((item, index) => (
+              <li key={index}>{item.name}</li>
             ))}
           </ul>
         </section>

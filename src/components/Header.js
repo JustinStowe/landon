@@ -26,8 +26,8 @@ export function Header() {
             </a>
           </div>
           <ul>
-            {menuLinksData.map((link) => (
-              <li>
+            {menuLinksData.map((link, index) => (
+              <li key={index}>
                 <a className={`icon ${link.class}`} href={link.href}>
                   <span>{link.text}</span>
                 </a>
