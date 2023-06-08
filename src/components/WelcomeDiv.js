@@ -10,6 +10,9 @@ function WelcomeDiv() {
     let jsonData = await response.json();
     setGalleryImages(jsonData);
   };
+  useEffect(() => {
+    loadGalleryImages();
+  }, []);
   return (
     <div className="scene" id="welcome">
       <article className="content">
