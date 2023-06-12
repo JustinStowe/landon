@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
 // import menuLinksData from "./data/menu_links.json";
+import { useController } from "../context/useController";
 export function Header() {
-  const [menuLinksData, setMenuLinksData] = useState([]);
-  const loadMenuLinksData = async () => {
-    const response = await fetch(
-      "https://0kbeg1cv46.execute-api.us-east-1.amazonaws.com/Production/menuLinks"
-    );
-    let jsonData = await response.json();
-    setMenuLinksData(jsonData);
-  };
+  const { menuLinksData, loadMenuLinksData } = useController();
+  // const [menuLinksData, setMenuLinksData] = useState([]);
+  // const loadMenuLinksData = async () => {
+  //   const response = await fetch(
+  //     "https://0kbeg1cv46.execute-api.us-east-1.amazonaws.com/Production/menuLinks"
+  //   );
+  //   let jsonData = await response.json();
+  //   setMenuLinksData(jsonData);
+  // };
   useEffect(() => {
     loadMenuLinksData();
   }, []);
