@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
 // import servicesData from "./data/services.json";
 // import accessibilitiesData from "./data/accessibilities.json";
+import React, { useEffect } from "react";
 import { useController } from "../context/useController";
 function HotelInfoDiv() {
   const {
@@ -9,22 +9,6 @@ function HotelInfoDiv() {
     loadAccessibilitiesData,
     loadServicesData,
   } = useController();
-  // const [accessibilitiesData, setAccessibilitiesData] = useState([]);
-  // const [servicesData, setServicesData] = useState([]);
-  // const loadAccessibilitiesData = async () => {
-  //   const response = await fetch(
-  //     "https://0kbeg1cv46.execute-api.us-east-1.amazonaws.com/Production/accessibilities"
-  //   );
-  //   let jsonData = await response.json();
-  //   setAccessibilitiesData(jsonData);
-  // };
-  // const loadServicesData = async () => {
-  //   const response = await fetch(
-  //     "https://0kbeg1cv46.execute-api.us-east-1.amazonaws.com/Production/services"
-  //   );
-  //   let jsonData = await response.json();
-  //   setServicesData(jsonData);
-  // };
 
   useEffect(() => {
     loadAccessibilitiesData();

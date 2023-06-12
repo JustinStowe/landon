@@ -1,17 +1,8 @@
-import React, { useEffect } from "react";
 // import galleryImages from "./data/gallery_images.json";
+import React, { useEffect } from "react";
 import { useController } from "../context/useController";
 function WelcomeDiv() {
   const { galleryImages, loadGalleryImages } = useController();
-  // const [galleryImages, setGalleryImages] = useState([]);
-
-  // const loadGalleryImages = async () => {
-  //   const response = await fetch(
-  //     "https://0kbeg1cv46.execute-api.us-east-1.amazonaws.com/Production/accessibilities"
-  //   );
-  //   let jsonData = await response.json();
-  //   setGalleryImages(jsonData);
-  // };
   useEffect(() => {
     loadGalleryImages();
   }, []);
